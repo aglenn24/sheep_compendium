@@ -17,6 +17,7 @@ def add_sheep(sheep: Sheep):
     db.data[sheep.id] = sheep
     return sheep
 
+'''
 @app.delete("/sheep/{id}", response_model=Sheep, status_code=status.HTTP_200_OK)
 def delete_sheep(id: int):
     db_sheep = db.get_sheep(id)
@@ -35,3 +36,4 @@ def update_sheep(sheep: Sheep, id: int):
         db.data[id] = sheep
         db.commit()
         return sheep
+'''

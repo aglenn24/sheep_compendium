@@ -41,6 +41,7 @@ def test_add_sheep():
     response = client.get("/sheep/8")
     assert response.status_code == 200
 
+'''
 def test_update_sheep():
     new_sheep = {"id": 1, "name": "Kewtee", "breed": "Babydoll"}
     response = client.put("/sheep/", json=new_sheep)
@@ -54,3 +55,4 @@ def test_delete_sheep():
     assert response.status_code == 204
     response = client.get("/sheep/1")
     assert response.status_code == 404
+'''
